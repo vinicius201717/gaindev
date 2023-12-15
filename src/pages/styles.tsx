@@ -13,6 +13,24 @@ export const Title = styled('h1', {
   textAlign: 'left',
   color: 'white',
   margin: '100px 100px 0 100px',
+
+  variants: {
+    size: {
+      lg: {
+        fontSize: '4rem',
+      },
+      md: {
+        fontSize: '2rem',
+      },
+      sm: {
+        fontSize: '0.5rem',
+      },
+    },
+  },
+
+  '@media(max-width: 963px)': {
+    margin: '50px 50px 0 50px',
+  },
 })
 
 export const Text = styled('p', {
@@ -21,6 +39,9 @@ export const Text = styled('p', {
   width: '800px',
   margin: '20px 100px 0 100px',
   color: '#848D97',
+  '@media(max-width: 963px)': {
+    margin: '0 50px 0 50px',
+  },
 })
 
 export const Header = styled('header', {
@@ -74,6 +95,10 @@ export const Contact = styled('form', {
   height: '60px',
   margin: '20px 100px 40px 100px',
   padding: 0,
+
+  '@media(max-width: 961px)': {
+    margin: '10px 100px 40px 45px',
+  },
 })
 
 export const Input = styled(TextField, {
@@ -89,6 +114,10 @@ export const Input = styled(TextField, {
     color: 'white',
     border: 'none',
     boxShadow: '0px 0px 9px 0px rgba(0,0,0,0.75)',
+  },
+
+  '@media(max-width: 963px)': {
+    margin: '0 50px 0 0',
   },
 })
 
@@ -107,6 +136,10 @@ export const Button = styled('button', {
   '&:hover': {
     backgroundColor: '#343f99',
   },
+
+  '@media(max-width: 961px)': {
+    margin: '10px 0 0 -50px',
+  },
 })
 
 export const SectionTecnology = styled('section', {
@@ -116,31 +149,141 @@ export const SectionTecnology = styled('section', {
   transform: 'translateY(-15px)',
   position: 'relarive',
   zIndex: '-1',
-  marginBottom: '200px',
+  marginBottom: '400px',
+
+  '@media(max-width: 1302px)': {
+    height: '1200px',
+    marginBottom: '100px',
+  },
 })
 
 export const SectionTecnologyModalRight = styled(motion.div, {
-  width: '700px',
-  height: '450px',
+  width: '44rem',
+  height: '44rem',
   borderRadius: '20px',
   boxShadow: '0px 0px 9px 0px rgba(0,0,0,0.75)',
   position: 'absolute',
   right: '80px',
   top: '60px',
   backgroundColor: '#1D1D1D',
+
+  '@media(max-width: 1570px)': {
+    width: '34rem',
+    height: '34rem',
+  },
+  '@media(max-width: 1302px)': {
+    left: '10px',
+    width: 'calc(100% - 20px)',
+  },
 })
 
 export const SectionTecnologyModalLeft = styled(motion.div, {
-  width: '700px',
-  height: '450px',
+  width: '44rem',
+  height: '44rem',
   borderRadius: '20px',
   boxShadow: '0px 0px 9px 0px rgba(0,0,0,0.75)',
   position: 'absolute',
   left: '80px',
   top: '200px',
   backgroundColor: '#1D1D1D',
+
+  '@media(max-width: 1570px)': {
+    width: '34rem',
+    height: '34rem',
+  },
+  '@media(max-width: 1302px)': {
+    left: '10px',
+    top: 'auto',
+    bottom: '20px',
+    width: 'calc(100% - 20px)',
+  },
 })
 
 export const SectionInfo = styled('section', {
   width: '100vw',
+})
+
+export const FooterContainer = styled('footer', {
+  width: '100vw',
+  height: '200px',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+
+  span: {
+    fontWeight: 'bold',
+  },
+})
+
+export const BigModal = styled(motion.article, {
+  width: '95%',
+  minHeight: '500px',
+  borderRadius: '10px',
+  margin: '20px auto',
+  border: '1px solid #1f1f1f',
+  backgroundColor: '#1D1D1D',
+  boxShadow: '0px 0px 9px 0px rgba(0,0,0,0.75)',
+  marginBottom: '100px',
+  position: 'relative',
+
+  h2: {
+    width: '500px',
+    margin: '100px',
+
+    span: {
+      color: '#3fb950',
+    },
+  },
+
+  '@media(max-width: 1148px)': {
+    h2: {
+      width: '320px',
+    },
+  },
+  '@media(max-width: 961px)': {
+    padding: '20px',
+    h2: {
+      width: '100%',
+      margin: '20px auto',
+    },
+  },
+
+  '@media(max-width: 800px)': {
+    height: '700px',
+  },
+  '@media(max-width: 580px)': {
+    minHeight: '300px',
+    height: '300px',
+  },
+})
+
+export const ImageContainer = styled('div', {
+  width: '30rem',
+  height: '80%',
+  position: 'absolute',
+  bottom: 0,
+  right: 0,
+  borderRadius: '10px 0 10px 0',
+  boxShadow: '-5px -5px 14px 0px rgba(0,0,0,0.75)',
+  marginTop: '20px',
+
+  img: {
+    width: '100%',
+    height: '100%',
+  },
+
+  '@media(max-width: 961px)': {
+    height: '70%',
+    width: '28rem',
+  },
+  '@media(max-width: 800px)': {
+    width: '35rem',
+    img: {
+      width: '100%',
+      height: '100%',
+    },
+  },
+  '@media(max-width: 580px)': {
+    display: 'none',
+  },
 })
