@@ -25,7 +25,6 @@ import {
   ItemList,
   ItemListPrice,
   CircleDesing,
-  ValuePrice,
 } from './styles'
 
 import logo from '../../public/logo.png'
@@ -217,9 +216,6 @@ export default function Home() {
               Logo Animada
             </ItemListPrice>
           </ul>
-          <ValuePrice>
-            <Image src={whatsapp} alt="whatsapp" width={30} />
-          </ValuePrice>
         </PriceContainer>
         <PriceContainer
           center={'bg'}
@@ -251,9 +247,6 @@ export default function Home() {
               Aplicativos
             </ItemListPrice>
           </ul>
-          <ValuePrice>
-            <Image src={whatsapp} alt="whatsapp" width={30} />
-          </ValuePrice>
         </PriceContainer>
         <PriceContainer
           initial={{ opacity: 0, x: 200 }}
@@ -283,9 +276,6 @@ export default function Home() {
               Funil de vendas
             </ItemListPrice>
           </ul>
-          <ValuePrice>
-            <Image src={whatsapp} alt="whatsapp" width={30} />
-          </ValuePrice>
         </PriceContainer>
       </FourthInfo>
       <NewContactContainer>

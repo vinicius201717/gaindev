@@ -453,7 +453,6 @@ export const FourthInfo = styled('section', {
 
 export const PriceContainer = styled(motion.div, {
   width: '400px',
-  height: '600px',
   marginTop: '550px',
   borderRadius: '10px',
   boxShadow: '0px 0px 9px 0px rgba(0,0,0,0.75)',
