@@ -131,6 +131,7 @@ export const SectionTecnology = styled('section', {
 
   '@media(max-width: 1105px)': {
     flexDirection: 'column',
+    marginTop: '100px',
   },
 })
 

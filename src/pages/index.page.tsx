@@ -43,6 +43,7 @@ import nodejs from '../../public/nodejs.svg'
 import reactLogo from '../../public/reactLogo.png'
 import versellogo from '../../public/versellogo.png'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -53,9 +54,15 @@ export default function Home() {
       <Header>
         <Image src={logo} alt="" width={50} height={50} />
         <Menu>
-          <Image src={instagram} alt="" width={24} height={24} />
-          <Image src={github} alt="" width={24} height={24} />
-          <Image src={whatsapp} alt="" width={24} height={24} />
+          <Link href="https://www.instagram.com/gainagencia/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==">
+            <Image src={instagram} alt="" width={24} height={24} />
+          </Link>
+          <Link href="https://github.com/vinicius201717">
+            <Image src={github} alt="" width={24} height={24} />
+          </Link>
+          <Link href="https://wa.me/5562984250875">
+            <Image src={whatsapp} alt="" width={24} height={24} />
+          </Link>
         </Menu>
       </Header>
       <Title size="lg">Gain Development</Title>
