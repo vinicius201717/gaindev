@@ -27,7 +27,6 @@ import {
   CircleDesing,
   ValuePrice,
 } from './styles'
-import Image from 'next/image'
 
 import logo from '../../public/logo.png'
 import instagram from '../../public/instagram.png'
@@ -43,6 +42,7 @@ import nextLogo from '../../public/nextLogo.png'
 import nodejs from '../../public/nodejs.svg'
 import reactLogo from '../../public/reactLogo.png'
 import versellogo from '../../public/versellogo.png'
+import Image from 'next/image'
 
 export default function Home() {
   return (
