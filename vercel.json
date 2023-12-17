@@ -1,7 +1,5 @@
 {
-    "version": 2,
-    "build":{
-        "buildCommand": "npm run build"    
-      }
-  }
+    "version": 2
+  
+}
   
