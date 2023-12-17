@@ -6,9 +6,6 @@ import {
   Degre,
   Container,
   Degre2,
-  Contact,
-  Input,
-  Button,
   SectionTecnology,
   SectionTecnologyModalLeft,
   SectionTecnologyModalRight,
@@ -67,10 +64,6 @@ export default function Home() {
         oferecendo soluções inovadoras e personalizadas. Escolha a excelência,
         escolha a liderança. Seu sucesso começa aqui.
       </Text>
-      <Contact>
-        <Input id="outlined-basic" label="Whatsapp" variant="outlined" />
-        <Button>Enviar</Button>
-      </Contact>
       <SectionTecnology>
         <BoxLineWhite rotateA={'transform'} />
 
@@ -137,10 +130,10 @@ export default function Home() {
           transition={{ duration: 3, ease: 'easeInOut' }}
           whileInView={{ borderRadius: '10px' }}
         >
+          <Image src={versellogo} alt="logo do reactjs" width={200} />
           <Image src={nextLogo} alt="logo do nextjs" width={100} />
           <Image src={nodejs} alt="logo do nodejs" />
           <Image src={reactLogo} alt="logo do reactjs" width={100} />
-          <Image src={versellogo} alt="logo do reactjs" width={200} />
         </SecondInfoMoveCircle>
       </SecondInfo>
       <ThirdInfo>
@@ -308,14 +301,9 @@ export default function Home() {
           serviços especializados de agências de marketing digital, consultorias
           de mídia social ou profissionais independentes.
         </Text>
-        <Contact>
-          <Input id="outlined-basic" label="Whatsapp" variant="outlined" />
-          <Button>Enviar</Button>
-        </Contact>
       </NewContactContainer>
       <FooterContainer>
         <Image src={logo} alt="Logo" width={90} height={90} />
-        {/* <span>Gain Development</span> */}
         <SubFooter>
           <span>© 2023 GainDevelopment, Inc.</span>
           <Menu>

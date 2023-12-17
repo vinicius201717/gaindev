@@ -17,6 +17,7 @@ export const CircleDesing = styled(motion.div, {
   zIndex: '-1',
   backgroundColor: '#FFF',
   transform: 'rotate(10deg) scale(1)',
+  boxShadow: '0px 0px 10px 0px rgba(255,255,255,1)',
 })
 
 export const Title = styled(motion.h1, {
@@ -119,75 +120,6 @@ export const Degre2 = styled('div', {
   filter:
     'progid: DXImageTransform.Microsoft.gradient( startColorstr="#4DA2A3", endColorstr="#1D1D1D", GradientType=1 )',
   zIndex: '-2',
-})
-
-export const Contact = styled('form', {
-  height: '60px',
-  margin: '20px 100px 40px 90px',
-  padding: 0,
-  display: 'flex',
-
-  '@media(max-width: 961px)': {
-    margin: '10px 100px 40px 45px',
-  },
-  '@media(max-width: 797px)': {
-    marginLeft: 0,
-    height: '40px',
-  },
-})
-
-export const Input = styled(TextField, {
-  width: '400px',
-  padding: '10px',
-  fontSize: '1rem',
-  color: '#848D97',
-  border: 'none',
-
-  label: { color: '#848D97' },
-
-  input: {
-    color: 'white',
-    border: 'none',
-    boxShadow: '0px 0px 9px 0px rgba(0,0,0,0.75)',
-  },
-
-  '@media(max-width: 963px)': {
-    margin: '0 50px 0 0',
-  },
-  '@media(max-width: 797px)': {
-    marginLeft: '10px',
-    input: {
-      height: '10px',
-    },
-  },
-})
-
-export const Button = styled('button', {
-  width: '100px',
-  height: '91%',
-  fontSize: '1rem',
-  color: 'white',
-  backgroundColor: '#34349c',
-  border: 'none',
-  marginTop: '10px',
-  boxShadow: '0px 0px 9px 0px rgba(0,0,0,0.75)',
-  borderRadius: '5px',
-  cursor: 'pointer',
-
-  '&:hover': {
-    backgroundColor: '#343f99',
-  },
-
-  '@media(max-width: 961px)': {
-    margin: '10px 0 0 -50px',
-  },
-
-  '@media(max-width: 797px)': {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    height: '100%',
-  },
 })
 
 export const SectionTecnology = styled('section', {
@@ -349,8 +281,6 @@ export const BigModal = styled(motion.article, {
   },
 
   '@media(max-width: 800px)': {
-    height: '700px',
-
     h2: {
       fontSize: '1.4rem',
       color: '#838383',
@@ -408,7 +338,9 @@ export const SecondInfo = styled('section', {
 
   '@media(max-width: 1181px)': {
     img: {
-      display: 'none',
+      '&:first-child': {
+        display: 'none',
+      },
     },
     flexDirection: 'column',
     justifyContent: 'center',
