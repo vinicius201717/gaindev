@@ -304,9 +304,15 @@ export default function Home() {
         <SubFooter>
           <span>© 2023 GainDevelopment, Inc.</span>
           <Menu>
-            <Image src={instagram} alt="" width={24} height={24} />
-            <Image src={github} alt="" width={24} height={24} />
-            <Image src={whatsapp} alt="" width={24} height={24} />
+            <Link href="https://www.instagram.com/gainagencia/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==">
+              <Image src={instagram} alt="" width={24} height={24} />
+            </Link>
+            <Link href="https://github.com/vinicius201717">
+              <Image src={github} alt="" width={24} height={24} />
+            </Link>
+            <Link href="https://wa.me/5562984250875">
+              <Image src={whatsapp} alt="" width={24} height={24} />
+            </Link>
           </Menu>
         </SubFooter>
       </FooterContainer>
