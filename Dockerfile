@@ -1,5 +1,5 @@
 # Use uma imagem base com uma versão do sistema operacional que suporte as dependências
-FROM node:14
+FROM node:18
 
 # Resto do seu Dockerfile
 # ...
