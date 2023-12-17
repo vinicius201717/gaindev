@@ -12,7 +12,7 @@
     "useGlobalLibs": true
   },
   "engines": {
-    "node": "20.x"
+    "node": "18.x"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
